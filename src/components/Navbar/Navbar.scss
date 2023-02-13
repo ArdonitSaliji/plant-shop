@@ -1,0 +1,117 @@
+// Variables
+
+$primary: #f9f9f9;
+$grey: #e4e4e4;
+$gradient: linear-gradient(90deg, rgba(39, 240, 158, 1) 20%, rgba(3, 165, 243, 1) 70%);
+
+//
+
+.navbar-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/plant-image.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            li {
+                padding: 10px 25px;
+                a {
+                    font-size: 1.1rem;
+                    color: $primary;
+                }
+            }
+        }
+        .header-cart {
+            color: $primary;
+            position: absolute;
+            top: 2.2rem;
+            right: 6rem;
+            width: 39px;
+            height: 36px;
+        }
+    }
+
+    .navbar-title {
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 3.5rem;
+    }
+
+    .navbar-text {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        color: $grey;
+        text-align: center;
+    }
+
+    .navbar-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary;
+        border-radius: 30px;
+        width: 20rem;
+        height: 3rem;
+        padding-left: 20px;
+        padding-right: 8px;
+        background-color: #5e6875;
+        margin-top: 2rem;
+        outline: 1px solid $grey;
+
+        input {
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+            color: white;
+            background: none;
+            border: none;
+        }
+        .navbar-search {
+            color: $primary;
+            width: 42px;
+            height: 38px;
+            border-radius: 50%;
+            padding: 10px;
+            background: $gradient;
+        }
+    }
+
+    .navbar-points {
+        width: 100%;
+        position: relative;
+        .navbar-point {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            outline: 1px solid $grey;
+            .inner-point {
+                width: 1rem;
+                height: 1rem;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+            &.right {
+                position: absolute;
+                top: 15px;
+                right: 230px;
+            }
+        }
+    }
+}
