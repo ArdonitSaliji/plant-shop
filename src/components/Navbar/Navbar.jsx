@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.scss';
 import { RiShoppingBagFill } from 'react-icons/ri';
 import { FiSearch } from 'react-icons/fi';
 
 const Navbar = () => {
+    let addClass = (e) => {
+        e.target.firstChild.firstChild.classList.add('show');
+        console.log(e.target);
+    };
+    let removeClass = (e) => {
+        console.log(e.target);
+        e.target.firstChild.firstChild.classList.remove('show');
+    };
     return (
-        <div className='navbar-container'>
+        <section className='navbar-container'>
             <header>
                 <ul>
                     <li>
@@ -38,10 +46,42 @@ const Navbar = () => {
             </div>
 
             <div className='navbar-points'>
-                <span className='navbar-point left1'></span>
-                <span className='navbar-point left2'></span>
+                <span
+                    onMouseEnter={(e) => addClass(e)}
+                    onMouseLeave={(e) => removeClass(e)}
+                    className='navbar-point left1'
+                >
+                    <span className='inner-point'>
+                        <div className='product'>
+                            <div className='product-desc'>
+                                <h2>$65.00</h2>
+                                <p>Dracena Fragnas</p>
+                            </div>
+                            <div className='product-arrow'></div>
+                        </div>
+                    </span>
+                </span>
+                <span
+                    onMouseEnter={(e) => addClass(e)}
+                    onMouseLeave={(e) => removeClass(e)}
+                    className='navbar-point left2'
+                >
+                    <span className='inner-point'>
+                        <div className='product'>
+                            <div className='product-desc'>
+                                <h2>$65.00</h2>
+                                <p>Dracena Fragnas</p>
+                            </div>
+                            <div className='product-arrow'></div>
+                        </div>
+                    </span>
+                </span>
 
-                <span className='navbar-point right'>
+                <span
+                    onMouseEnter={(e) => addClass(e)}
+                    onMouseLeave={(e) => removeClass(e)}
+                    className='navbar-point right'
+                >
                     <span className='inner-point'>
                         <div className='product'>
                             <div className='product-desc'>
@@ -53,7 +93,7 @@ const Navbar = () => {
                     </span>
                 </span>
             </div>
-        </div>
+        </section>
     );
 };
 
