@@ -40,8 +40,17 @@ const Navbar = () => {
             <div className='navbar-points'>
                 <span className='navbar-point left1'></span>
                 <span className='navbar-point left2'></span>
+
                 <span className='navbar-point right'>
-                    <span className='inner-point'></span>
+                    <span className='inner-point'>
+                        <div className='product'>
+                            <div className='product-desc'>
+                                <h2>$65.00</h2>
+                                <p>Dracena Fragnas</p>
+                            </div>
+                            <div className='product-arrow'></div>
+                        </div>
+                    </span>
                 </span>
             </div>
         </div>
