@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+.reference-container {
+    padding: 0 8rem;
+    .reference-text {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: $dark-grey;
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './Navbar.scss';
+import './Hero.scss';
 import { RiShoppingBagFill } from 'react-icons/ri';
 import { FiSearch } from 'react-icons/fi';
 
-const Navbar = () => {
+const Hero = () => {
     let addClass = (e) => {
         e.target.firstChild.firstChild.classList.add('show');
         console.log(e.target);
@@ -13,7 +13,7 @@ const Navbar = () => {
         e.target.firstChild.firstChild.classList.remove('show');
     };
     return (
-        <section className='navbar-container'>
+        <section className='hero-container'>
             <header>
                 <ul>
                     <li>
@@ -32,24 +32,24 @@ const Navbar = () => {
                 <RiShoppingBagFill className='header-cart' />
             </header>
 
-            <h1 className='navbar-title'>
+            <h1 className='hero-title'>
                 Bring Serenity to Your Place
                 <br /> With Interior Plants
             </h1>
-            <p className='navbar-text'>
+            <p className='hero-text'>
                 find your dream plant for you home decoration
                 <br /> with us, and we will make it happen.
             </p>
-            <div className='navbar-input'>
+            <div className='hero-input'>
                 <input type='text' placeholder='Search plant' />
-                <FiSearch className='navbar-search' />
+                <FiSearch className='hero-search' />
             </div>
 
-            <div className='navbar-points'>
+            <div className='hero-points'>
                 <span
                     onMouseEnter={(e) => addClass(e)}
                     onMouseLeave={(e) => removeClass(e)}
-                    className='navbar-point left1'
+                    className='hero-point left1'
                 >
                     <span className='inner-point'>
                         <div className='product'>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <span
                     onMouseEnter={(e) => addClass(e)}
                     onMouseLeave={(e) => removeClass(e)}
-                    className='navbar-point left2'
+                    className='hero-point left2'
                 >
                     <span className='inner-point'>
                         <div className='product'>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <span
                     onMouseEnter={(e) => addClass(e)}
                     onMouseLeave={(e) => removeClass(e)}
-                    className='navbar-point right'
+                    className='hero-point right'
                 >
                     <span className='inner-point'>
                         <div className='product'>
@@ -97,4 +97,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Hero;

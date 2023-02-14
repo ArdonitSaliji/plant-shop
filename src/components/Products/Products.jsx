@@ -1,5 +1,5 @@
 import React from 'react';
-import Features from './Features';
+import Services from './Services';
 import { BsArrowRight } from 'react-icons/bs';
 import { AiFillStar, AiOutlinePlus } from 'react-icons/ai';
 import './Products.scss';
@@ -12,7 +12,7 @@ const Products = () => {
     let arr = [plant, plant1, plant2];
     return (
         <section className='product-container'>
-            <Features />
+            <Services />
 
             <div className='products'>
                 <div className='best-seller'>
@@ -25,8 +25,8 @@ const Products = () => {
                 </div>
 
                 <div className='product-plants'>
-                    {arr.map((img) => (
-                        <div className='product-plant'>
+                    {arr.map((img, i) => (
+                        <div className='product-plant' key={i}>
                             <div className='plant-img'>
                                 <img src={img} alt='' />
                             </div>
