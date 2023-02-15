@@ -85,6 +85,7 @@
     .hero-points {
         width: 100%;
         position: relative;
+
         .hero-point {
             transition: 0.2s;
             width: 3rem;
@@ -103,20 +104,20 @@
 
             &.right {
                 position: absolute;
-                top: 15px;
-                right: 140px;
+                top: 100px;
+                right: 100px;
             }
 
             &.left1 {
                 position: absolute;
-                left: 330px;
+                left: 310px;
                 top: 20px;
             }
 
             &.left2 {
                 position: absolute;
-                left: 260px;
-                top: -180px;
+                left: 240px;
+                top: -160px;
             }
 
             .inner-point {
