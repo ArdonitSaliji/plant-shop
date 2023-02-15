@@ -4,6 +4,7 @@
     width: 100%;
     padding: 0 8rem;
     margin-bottom: 10rem;
+
     .reference-text {
         width: 100%;
         display: flex;
@@ -22,10 +23,12 @@
             font-size: 1rem;
         }
     }
+
     .reference-images {
         display: flex;
         justify-content: center;
         align-items: center;
+
         img {
             width: 30rem;
             min-width: 10rem;
@@ -36,12 +39,14 @@
                 height: 18rem;
             }
         }
+
         .left {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
             margin-right: 1.5rem;
         }
+
         .right {
             img {
                 height: 40rem;
