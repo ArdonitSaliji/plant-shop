@@ -4,6 +4,7 @@ import Product from './components/Products/Products';
 import Blur from './components/Blur/Blur';
 import Care from './components/Care/Care.jsx';
 import Reference from './components/Reference/Reference';
+import Footer from './components/Footer/Footer';
 import './App.css';
 <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');</style>;
 
@@ -17,6 +18,7 @@ function App() {
             <Product />
             <Reference />
             <Care />
+            <Footer />
         </div>
     );
 }

@@ -21,8 +21,8 @@ const Care = () => {
                         </linearGradient>
                     </svg>
 
-                    {data?.map((el) => (
-                        <div className='adjust-content'>
+                    {data?.map((el, i) => (
+                        <div key={i} className='adjust-content'>
                             <div className='content-icon'>
                                 <el.icon
                                     style={

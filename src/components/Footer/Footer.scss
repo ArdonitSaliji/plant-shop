@@ -1,0 +1,96 @@
+@import '../variables.scss';
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 29rem;
+    background-color: #404c5b;
+
+    hr {
+        margin-top: 2rem;
+        width: 85%;
+        color: white;
+    }
+
+    .copyright {
+        color: white;
+        margin-top: 3rem;
+        font-weight: 500;
+    }
+
+    .footer-nav {
+        display: flex;
+        color: white;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 9rem;
+        .footer-newsletter {
+            h1 {
+                font-weight: 500;
+                font-size: 2.5rem;
+                margin-left: 8px;
+            }
+            .subscribe {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $primary;
+                border-radius: 50px;
+                width: 20rem;
+                height: 3rem;
+                padding-left: 20px;
+                padding-right: 8px;
+                background-color: #5e6875;
+                margin-top: 1.5rem;
+                outline: 1px solid $grey;
+
+                input {
+                    outline: none;
+                    width: 100%;
+                    font-size: 14px;
+                    color: white;
+                    background: none;
+                    border: none;
+                }
+
+                button {
+                    border-radius: 50px;
+                    width: 10rem;
+                    height: 2rem;
+                    background: $gradient;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            .footer-link {
+                margin-right: 8rem;
+                h2 {
+                    margin-bottom: 2rem;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+                a {
+                    transition: 0.2s;
+                    color: white;
+                    margin-bottom: 1rem;
+
+                    &:hover {
+                        color: $dark-grey;
+                    }
+                }
+                p {
+                    margin-bottom: 1rem;
+                }
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

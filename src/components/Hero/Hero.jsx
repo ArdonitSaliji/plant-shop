@@ -6,10 +6,8 @@ import { FiSearch } from 'react-icons/fi';
 const Hero = () => {
     let addClass = (e) => {
         e.target.firstChild.firstChild.classList.add('show');
-        console.log(e.target);
     };
     let removeClass = (e) => {
-        console.log(e.target);
         e.target.firstChild.firstChild.classList.remove('show');
     };
     return (

@@ -6,3 +6,6 @@
     list-style-type: none;
     font-family: 'Work Sans', sans-serif;
 }
+body {
+    scroll-behavior: smooth;
+}

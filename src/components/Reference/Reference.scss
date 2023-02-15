@@ -1,12 +1,16 @@
 @import '../variables.scss';
 
 .reference-container {
+    width: 100%;
     padding: 0 8rem;
+    margin-bottom: 10rem;
     .reference-text {
+        width: 100%;
         display: flex;
         align-content: center;
         text-align: center;
         flex-direction: column;
+        margin-bottom: 3rem;
 
         h1 {
             font-size: 3.5rem;
@@ -16,6 +20,33 @@
         p {
             color: $dark-grey;
             font-size: 1.3rem;
+        }
+    }
+    .reference-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40rem;
+            min-width: 10rem;
+            min-height: auto;
+            height: 25rem;
+            border-radius: 50px;
+            &:nth-child(2) {
+                height: 18rem;
+            }
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        .right {
+            img {
+                height: 45rem;
+                width: 31rem;
+            }
         }
     }
 }
