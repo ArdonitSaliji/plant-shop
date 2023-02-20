@@ -126,6 +126,8 @@
                         align-items: center;
 
                         .plant-plus {
+                            transition: 0.3s all;
+                            cursor: pointer;
                             border-radius: 50%;
                             background: $gradient;
                             height: 2.5rem;
@@ -133,7 +135,9 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-
+                            &:hover {
+                                transform: scale(1.1);
+                            }
                             svg {
                                 width: 2rem;
                                 height: 2rem;
