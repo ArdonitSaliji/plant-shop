@@ -28,7 +28,7 @@ const Products = () => {
                     {arr.map((img, i) => (
                         <div className='product-plant' key={i}>
                             <div className='plant-img'>
-                                <img src={img} alt='' />
+                                <img src={img} loading='lazy' alt='' />
                             </div>
                             <div className='plant'>
                                 <div className='plant-desc'>

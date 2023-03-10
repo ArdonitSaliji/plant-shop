@@ -13,11 +13,11 @@ const Reference = () => {
             </div>
             <div className='reference-images'>
                 <div className='left'>
-                    <img src={res1} alt='' />
-                    <img src={res3} alt='' />
+                    <img src={res1} loading='lazy' alt='' />
+                    <img src={res3} loading='lazy' alt='' />
                 </div>
                 <div className='right'>
-                    <img src={res2} alt='' />
+                    <img src={res2} loading='lazy' alt='' />
                 </div>
             </div>
         </section>

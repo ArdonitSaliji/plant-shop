@@ -188,3 +188,35 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .hero-container {
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .hero-text {
+            font-size: 0.8rem;
+        }
+        header {
+            ul {
+                li {
+                    a {
+                        font-size: 0.8rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .header-cart {
+                cursor: pointer;
+                color: $primary;
+                position: absolute;
+                top: 0.5rem;
+                right: 50%;
+                transform: translateX(50%);
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
