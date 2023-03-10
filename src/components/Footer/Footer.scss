@@ -96,3 +96,82 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: '1000px') {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // height: 35rem;
+        background-color: #404c5b;
+
+        hr {
+            margin-top: 2rem;
+            width: 85%;
+            color: white;
+        }
+
+        .copyright {
+            color: white;
+            margin-top: 3rem;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .footer-nav {
+            display: flex;
+            color: white;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            .footer-newsletter {
+                margin-right: 0;
+                h1 {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    margin-left: 0;
+                    // margin-top: 3rem;
+                }
+                .subscribe {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .footer-links {
+                display: flex;
+                .footer-link {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 0;
+                    width: 90px;
+                    h2 {
+                        text-align: center;
+                        white-space: break-spaces;
+                        margin-bottom: 2rem;
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                    }
+                    a {
+                        text-align: center;
+                        transition: 0.2s;
+                        color: white;
+                        margin-bottom: 1rem;
+                        font-size: 0.6rem;
+
+                        &:hover {
+                            color: $dark-grey;
+                        }
+                    }
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

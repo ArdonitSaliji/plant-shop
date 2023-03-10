@@ -55,3 +55,62 @@
         }
     }
 }
+
+@media screen and (max-width: '1000px') {
+    .reference-container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10rem;
+
+        .reference-text {
+            width: 100%;
+            display: flex;
+            align-content: center;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 3rem;
+
+            h1 {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+            p {
+                text-align: center;
+                color: $dark-grey;
+                font-size: 0.7rem;
+            }
+        }
+
+        .reference-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 150px;
+                min-width: unset;
+                min-height: unset;
+                height: 150px;
+                border-radius: 50px;
+                &:nth-child(2) {
+                    height: 200px;
+                }
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            .right {
+                img {
+                    height: 380px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './Care.scss';
 import careImg from '../../assets/care.jpg';
 import data from './Care';
+
 const Care = () => {
     return (
         <section className='care-container'>
